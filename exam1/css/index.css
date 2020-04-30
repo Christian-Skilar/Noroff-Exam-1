@@ -3,10 +3,10 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body {
-	background: #000;
 	background-image: url(../img/bodyimg2.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -16,7 +16,7 @@ body {
 	flex-direction: column;
 }
 
-/*--------- FONT ---------*/
+/*--------- HEADER ---------*/
 
 .header-container {
 	position: relative;
@@ -28,7 +28,7 @@ header div a {
 }
 .site-logo {
 	position: absolute;
-	top: 35%;
+	top: 25%;
 	left: 5%;
 	color: white;
 	font-size: 30px;
@@ -39,8 +39,6 @@ h1 {
 	font-style: normal;
 }
 header {
-	text-align: center;
-	background-color: white;
 }
 .headerimg {
 	width: 100%;
@@ -48,12 +46,14 @@ header {
 }
 /*--------- NAV BAR ---------*/
 
+header .menu-btn {
+	display: none;
+}
+
 .navbar-container {
 	display: flex;
 	justify-content: space-around;
 	background-color: #555;
-	padding: 10px;
-	font-size: 0;
 }
 
 .navbar-container ul li {
@@ -69,7 +69,7 @@ header {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
-	padding: 10px;
+	padding: 5px;
 	transition: color 0.5s;
 }
 
@@ -91,12 +91,48 @@ header {
 	width: 100%;
 }
 /*--------- BODY ---------*/
-
+.to-top-img-container {
+	position: relative;
+}
 div .to-top-img {
-	transform: rotate(315deg);
+	position: absolute;
 	margin-left: 45%;
-	margin-bottom: -10.5%;
-	width: 70px;
+	padding-top: 60px;
+	width: 80px;
+}
+div .to-top-img:hover {
+	padding-top: 50px;
+	transform: scale(1.1);
+	transition: all .2s ease-in;
+}
+.test {
+	width: 100px;
+	height: 100px;
+	transition: width .3s;
+	background-color: #eee;
+	padding: 90px;
+	text-align: center;
+	opacity: 0.4;
+	border-radius: 10px;
+	margin: 20px;
+	align-self: center;
+}
+.test:hover {
+	width: 250px;
+}
+.test1 {
+	display: flex;
+	justify-content: space-around;
+}
+.test-1 {
+	width: 100px;
+	background-color: #eee;
+	padding: 90px;
+	text-align: center;
+	opacity: 0.4;
+	border-radius: 10px;
+	margin: 20px;
+	align-self: center;
 }
 /*--------- FOOTER ---------*/
 
@@ -114,6 +150,7 @@ footer {
 	padding: 10px 20px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .ft-main-item {
 	padding: 20px;
@@ -127,7 +164,7 @@ footer a {
 	padding-bottom: 10px;
 }
 .footer-title {
-	color: #fff;
+	color: #11a0d9;
 	font-size: 25px;
 	padding-bottom: 5px;
 	border-bottom: 2px solid white;
@@ -194,6 +231,10 @@ input[type="submit"] {
 .sosial-media-img {
 	width: 95px;
 	margin-top: 50px;
+	opacity: 0.6;
+}
+.sosial-media-img:hover {
+	opacity: 10;
 }
 
 /* Footer legal */
@@ -215,8 +256,167 @@ input[type="submit"] {
 input:focus {
 	outline: none;
 }
-@media only screen and (min-width: 500px) {
+
+/*------------ TABLET ------------*/
+
+@media only screen and (max-width: 1024px) {
+	.headerimg {
+		height: 150px;
+	}
+	.navbar-container {
+		padding: 20px;
+	}
+	.header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		background-color: #555;
+	}
+	.header ul a {
+		display: inline-block;
+		text-decoration: none;
+		width: 325px;
+		font-size: 40px;
+		margin: 0;
+	}
+	.header .menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	}
+	.header .menu-icon {
+		padding: 18px 10px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	}
+	.header .menu-icon .nav-icon {
+		background: white;
+		display: block;
+		height: 4px;
+		width: 35px;
+		position: relative;
+		transition: background .2s ease-out;
+	}
+	.header .menu-icon .nav-icon:before {
+		background: white;
+		content: "";
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		top: 10px;
+	}
+	.header .menu-icon .nav-icon:after {
+		background: white;
+		content: "";
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		top: -10px;
+	}
+	.header .menu-btn {
+		display: none;
+	}
+	.header .menu-btn:checked ~ .menu {
+		max-height: 300px;
+	}
+	.header .menu-btn:checked ~ .menu-icon .nav-icon {
+		background: transparent;
+	}
+	.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+		transform: rotate(-45deg);
+		top: 0;
+	}
+	.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+		transform: rotate(45deg);
+		top: 0;
+	}
+	.navbar-container ul li .underline {
+		display: none;
+	}
+	.navbar-container ul li.active-link .underline {
+		display: none;
+	}
+
+	.navbar-container ul li:hover .underline {
+		display: none;
+	}
+	.site-logo {
+		top: 10px;
+	}
 	.ft-main {
-		justify-content: space-evenly;
+		flex-direction: column-reverse;
+	}
+	input[type="email"] {
+		border-radius: 5px;
+		width: 50%;
+		margin-left: 25%;
+	}
+	input[type="submit"] {
+		border-radius: 5px;
+		width: 20%;
+		margin-left: 42%;
+		margin-top: 15px;
+	}
+	.email-error {
+		margin-left: 4%;
+		display: block;
+	}
+	.sosial-media-img {
+		opacity: 10;
+	}
+	.ft-main-item {
+		text-align: center;
 	}
 }
+
+/*------------ PHONE ------------*/
+@media only screen and (max-width: 415px) {
+	.site-logo {
+		top: 0;
+		font-size: 20px;
+	}
+	.headerimg {
+		height: 100px;
+	}
+	div .to-top-img {
+		margin-bottom: -38%;
+		margin-left: 40%;
+	}
+	.test {
+		width: 100px;
+		background-color: #eee;
+		padding: 50px;
+		text-align: center;
+		opacity: 0.4;
+		border-radius: 10px;
+		margin: 10px;
+		align-self: center;
+	}
+	.test1 {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	input[type="email"] {
+		border-radius: 5px;
+		width: 100%;
+	}
+	input[type="submit"] {
+		border-radius: 5px;
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 15px;
+	}
+	.email-error {
+		margin-left: 0;
+		display: block;
+	}
+}
+
+/*------------ HAMBURGER MENU ------------*/
