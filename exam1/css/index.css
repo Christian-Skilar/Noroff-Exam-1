@@ -1,20 +1,42 @@
 .test {
-	width: 100px;
-	transition: width 300ms;
-	background-color: #eee;
-	padding: 100px;
+	width: 100%;
+	background-color: rgba(150, 150, 150, 0.0);
+	color: white;
 	text-align: center;
-	opacity: 0.4;
-	border-radius: 10px;
-	margin: 20px;
+	margin: 100px;
 	align-self: center;
+	transition: padding 500ms;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 30px;
 }
 .test:hover {
-	width: 250px;
+	transition-timing-function: ease-out;
+	border-radius: 0;
+	padding: 30px;
+}
+.test:hover .show-more {
+	display: block;
+}
+.test:hover .test-p {
+	display: none;
+}
+.show-more {
+	margin: 20px;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 30px;
+	display: none;
+}
+.astronaut-img {
+	width: 100px;
 }
 .test1 {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 200px;
 }
 .test-1 {
 	width: 100px;
@@ -32,6 +54,9 @@
 	font-family: stencil-std, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	margin-bottom: 50px;
+	color: white;
+	letter-spacing: 1px;
 }
 .alien-img {
 	width: 100px;
