@@ -1,1 +1,116 @@
+/*------------------- TESLA ROADSTER -----------------------*/
 
+.section1 {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
+	margin: 200px auto;
+	width: 100%;
+	text-align: center;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: white;
+}
+.tesla-name {
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 40px;
+	color: #11a0d9;
+}
+.tesla-img {
+	width: 60%;
+}
+.tesla-description {
+	line-height: 40px;
+	font-size: 20px;
+	padding: 50px;
+}
+
+/*------------------- PEOPLE IN SPACE -----------------------*/
+
+.section2 {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
+	margin: 100px auto;
+	padding: 150px 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.h2-img-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.h2-img-container h2 {
+	font-size: 40px;
+	color: #11a0d9;
+}
+.astronaut-image1 {
+	width: 150px;
+	transform: scaleX(-1);
+}
+.astronaut-image2 {
+	width: 150px;
+}
+.people-count {
+	display: flex;
+	justify-content: center;
+	margin: 100px 0;
+}
+.people-count p {
+	margin: 2px;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 25px;
+}
+.number {
+	text-decoration: underline;
+}
+.people-in-space-info {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px 0;
+}
+.people-in-space-info {
+	border-bottom: 1px solid white;
+	width: 50%;
+	margin: 30px auto;
+}
+.craft-name-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 30%;
+	font-size: 20px;
+}
+
+/*------------------------------------------*/
+
+.section3 {
+	background-color: white;
+	margin: 100px auto;
+	padding: 50px;
+	width: 80%;
+	text-align: center;
+}
+
+/*------------------------------------------*/
+
+.section4 {
+	background-color: white;
+	margin: 100px auto;
+	padding: 50px;
+	width: 80%;
+	text-align: center;
+}
+
+/*--------------- TABLET ---------------*/
+
+@media only screen and (max-width: 1024px) {
+}
+
+/*------------ PHONE ------------*/
+
+@media only screen and (max-width: 415px) {
+}

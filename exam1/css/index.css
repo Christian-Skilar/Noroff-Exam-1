@@ -72,34 +72,34 @@
 }
 .launch-button:active {
 	font-size: 19px;
-	padding: 16px;
+	padding: 11px;
 }
 .launch-button a {
 	text-decoration: none;
 	color: white;
 }
 
-/* --------------- SPINNING ALIEN --------------*/
+/* --------------- SPINNING CLOCK --------------*/
 
-.alien {
+.history {
 	text-align: center;
-	font-family: stencil-std, sans-serif;
-	font-weight: 400;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
 	font-style: normal;
 	margin-bottom: 50px;
 	margin-top: 20px;
 	color: white;
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 30px;
 }
-.alien-img {
+.history-img {
 	margin-top: 300px;
-	width: 150px;
+	width: 200px;
 	transition-duration: 500ms;
 	transition-property: transform;
 }
-.alien-img:hover {
-	transform: rotate(360deg);
+.history-img:hover {
+	transform: rotate(-360deg);
 }
 
 /* --------------- HOW MANY PEOPLE IN SPACE --------------*/
@@ -326,12 +326,12 @@
 		margin-left: -72px;
 	}
 	/* ------ALIEN IMG-------*/
-	.alien-img {
+	.history-img {
 		margin-top: 100px;
 		width: 150px;
 		transition-duration: 0;
 	}
-	.alien-img:hover {
+	.history-img:hover {
 		transform: rotate(0deg);
 	}
 	/* --------PEOPLE IN SPACE--------*/
