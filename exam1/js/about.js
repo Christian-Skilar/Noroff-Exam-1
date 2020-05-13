@@ -76,7 +76,15 @@ async function spaceHistory() {
 spaceHistory();
 
 function spaceHistoryLoop(historyResults) {
+	const title = document.querySelector(".title");
+	const date = document.querySelector(".event-date");
+	const detail = document.querySelector(".details");
+
 	for (let i = 0; i < historyResults.length; i++) {
+		title.innerHTML += `<p>${historyResults[i].title}</p>`;
+		date.innerHTML += `<p>${historyResults[i].event_date_utc}</p>`;
+		detail.innerHTML += `<p>${historyResults[i].details}</p>`;
+
 		console.log(historyResults[i]);
 	}
 }

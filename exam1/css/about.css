@@ -88,11 +88,34 @@
 /*------------------------------------------*/
 
 .section3 {
-	background-color: white;
-	margin: 100px auto;
-	padding: 50px;
-	width: 80%;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
+	margin: 200px auto;
+	width: 100%;
 	text-align: center;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: white;
+}
+.section3 h2 {
+	color: #11a0d9;
+	font-size: 40px;
+}
+.history-container {
+	display: flex;
+	justify-content: space-between;
+}
+.history-container p {
+	border: 1px solid white;
+	padding: 30px 0;
+}
+.title,
+.event-date {
+	flex: 1;
+}
+.details {
+	flex: 4;
 }
 
 /*------------------------------------------*/

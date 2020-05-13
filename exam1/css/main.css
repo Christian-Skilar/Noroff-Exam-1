@@ -95,8 +95,8 @@ header .menu-btn {
 
 div .to-top-img {
 	display: block;
-	width: 80px;
-	margin: 0 auto;
+	width: 100px;
+	margin: 40px auto;
 	transform: translateY(15px);
 	transition-duration: 200ms;
 	transition-property: transform;
