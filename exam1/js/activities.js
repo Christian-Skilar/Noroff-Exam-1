@@ -22,18 +22,12 @@ async function getLaunchInfo() {
 getLaunchInfo();
 
 function launchResults(result) {
-	for (let i = 0; i < result.length; i++) {
-		launchName.innerHTML += `<p>${result[i].mission_name}</p>`;
-		rocketName.innerHTML += `<p>${result[i].launch_site.site_name_long}</p>`;
-		launchDate.innerHTML += `<p>${result[i].launch_date_local}</p>`;
-
-		let noValue = "No data";
-
-		if (result[i].mission_name) {
-			noValue = result[i].mission_name;
-		}
-
-		console.log(result[i]);
+	for (var i = 0; i < result.length; i++) {
+		document.querySelector(".launch-container1").innerHTML += `<div class="launch-container">
+            <p class="title">${result[i].mission_name}</p>
+            <p class="event-date">${result[i].launch_site.site_name_long}</p>
+            <p class="details">${result[i].launch_date_local}</p>
+          </div>`;
 	}
 }
 

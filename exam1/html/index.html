@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
+
+  <div class="loader">
+    <img src="../img/Eclipse-loader.gif" alt="Loading...">
+  </div>
+
     <header>
         <div class="header-container">
             <img id="top" class="headerimg" src="../img/headerimg2.jpg" alt="header image">
@@ -40,6 +45,43 @@
       </nav>
     </header>
     
+    <div class="spacex-intro">
+      <h2>What do we do?</h2>
+      <p>SpaceX designs, manufactures and launches advanced rockets and 
+        spacecraft. The company was founded in 2002 to revolutionize space 
+        technology, with the ultimate goal of enabling people to live on 
+        other planets.</p>
+        <div class="img-container">
+          <img class="spacex-img" src="../img/rocket-launch.jpg" alt="spacex rocket launch ground">
+          <img class="spacex-img" src="../img/rocket-launch-6.jpg" alt="spacex rocket launch space">
+          <img class="spacex-img" src="../img/satellite-69.jpg" alt="space statelite">
+        </div>
+    </div>
+
+    <div class="fun-fact-container">
+        <div class="fact1">
+          <h2>Fun Fact</h2>
+          <h3>Its founder is an Internet mogul</h3>
+          <p>The guy who wants to take you into orbit was one of a handful of guys 
+            who made it easier to pay for stuff online. Elon Musk, 40, a South African 
+            by birth, was a co-founder of PayPal. After cashing out on that venture, 
+            Musk got into futuristic transportation, sinking funds into electric cars 
+            and SpaceX.</p>
+            <img class="geek" src="../img/social.png" alt="man with glasses icon">
+        </div>
+        <div class="fact2">
+          <h2>Fun Fact</h2>
+          <h3>Teamed up with Microsoft co-founder <img class="handshake" src="../img/gestures.png" alt="handshake icon"></h3>
+          <p>SpaceX got some extra tech-world cred when Microsoft co-founder Paul Allen 
+            jumped on board in 2011, creating a joint project with the company called 
+            Stratolaunch Systems. It seems Allen and Musk want to put people into orbit 
+            using an air-powered rocket that would be fired from the back of what, if built, 
+            would be the largest aircraft ever. Allen has told reporters that he thinks the 
+            project will show quick returns and will be launching craft into orbit using the 
+            air-launched rocket by 2020.</p>
+        </div>
+    </div>
+
     <section class="section1">
         <div class="launch-content"><p class="next-launches">Next launches</p>
           <div>
@@ -53,8 +95,8 @@
           <button class="launch-button"><a href="activities.html#launches">More info</a></button>
         </div>
 
-        <div class="history"><a href="about.html#3"><img class="history-img" src="../img/interface.png" alt="history image"></a>
-          <p class="history">Click the clock,<br> and go back in time</p>
+        <div class="history"><a href="about.html#3"><img class="history-img" src="../img/transport.png" alt="history image"></a>
+          <p class="history">Click the image,<br> and go back in SpaceX mission history</p>
         </div>
     </section>
 
@@ -85,7 +127,7 @@
         <h3 class="longitude" id="h31"></h3>
         <p class="location-indicator">°E</p>
     </div>
-    <img class="statelite-img" src="../img/satellite1.png">
+    <a class="statelite-img-link" href="about.html#4"><img class="statelite-img" src="../img/satellite1.png"></a>
     <p class="iss-info">Click image for more information on ISS</p>
 
     <div class="to-top-img-container">
@@ -143,6 +185,7 @@
           </ul>
         </section>
       </footer>
+      <script src="../js/main.js"></script>
       <script src="../js/index.js"></script>
 </body>
 </html>

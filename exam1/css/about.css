@@ -11,6 +11,20 @@
 	font-style: normal;
 	color: white;
 }
+.section1 a {
+	color: #11a0d9;
+	text-decoration: none;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	border-bottom: 2px solid gray;
+	padding: 5px;
+	transition-duration: 100ms;
+}
+.section1 a:hover {
+	font-size: 25px;
+}
 .tesla-name {
 	font-family: futura-pt, sans-serif;
 	font-weight: 600;
@@ -85,30 +99,62 @@
 	font-size: 20px;
 }
 
-/*------------------------------------------*/
+/*------------------- SPACE HISTORY -----------------------*/
 
-.section3 {
+.container {
 	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
-	margin: 200px auto;
+	margin: 500px 0;
+}
+.heading-history {
+	margin: 0 auto;
+	padding-top: 100px;
 	width: 100%;
-	text-align: center;
 	font-family: bilo, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	color: white;
-}
-.section3 h2 {
 	color: #11a0d9;
 	font-size: 40px;
+	text-align: center;
+}
+.heading-history p {
+	color: white;
+	font-size: 25px;
+	margin: 100px;
+}
+.sub-title {
+	display: flex;
+	font-size: 25px;
+	margin-bottom: -80px;
+	margin-top: 80px;
+	border-bottom: 2px solid gray;
+	letter-spacing: 1px;
+}
+.h3-1 {
+	margin-left: 12%;
+}
+.h3-2 {
+	margin-left: 12%;
+}
+.h3-3 {
+	margin-left: 25%;
+}
+.section {
+	text-align: center;
+	padding: 100px;
+}
+.section3 {
+	display: none;
 }
 .history-container {
 	display: flex;
 	justify-content: space-between;
 }
+
 .history-container p {
-	border: 1px solid white;
-	padding: 30px 0;
+	padding: 30px;
+	font-size: 20px;
+	color: white;
 }
 .title,
 .event-date {
@@ -117,23 +163,130 @@
 .details {
 	flex: 4;
 }
+button {
+	margin: 150px auto;
+	background-color: #11a0d9;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	width: 200px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+button:active {
+	font-size: 28px;
+	padding: 11px;
+}
+.show-more-btn {
+	margin-bottom: 300px;
+}
 
 /*------------------------------------------*/
 
-.section4 {
-	background-color: white;
-	margin: 100px auto;
-	padding: 50px;
-	width: 80%;
+.iss-container {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
+	margin-top: 0;
+}
+.iss-container h2 {
+	color: #11a0d9;
 	text-align: center;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 40px;
+	margin-top: 150px;
+}
+.iss-container p {
+	color: white;
+	text-align: center;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	padding: 20px 50px;
+}
+#readMore {
+	display: none;
+}
+.iss-btn {
+	margin: 0 auto;
 }
 
 /*--------------- TABLET ---------------*/
 
 @media only screen and (max-width: 1024px) {
+	.h3-1 {
+		margin-left: 14%;
+	}
+	.h3-2 {
+		margin-left: 12%;
+	}
+	.h3-3 {
+		margin-left: 18%;
+	}
 }
 
 /*------------ PHONE ------------*/
 
 @media only screen and (max-width: 415px) {
+	.h2-img-container h2 {
+		font-size: 30px;
+		color: #11a0d9;
+	}
+	.astronaut-image1 {
+		width: 100px;
+		height: 100px;
+		transform: scaleX(-1);
+	}
+	.astronaut-image2 {
+		width: 100px;
+		height: 100px;
+	}
+	.people-in-space-info {
+		width: 80%;
+	}
+	.craft-name-container {
+		margin: 0 16%;
+	}
+
+	/*------------------------------------------*/
+
+	.heading-history h2 {
+		font-size: 40px;
+	}
+	.heading-history p {
+		color: white;
+		font-size: 25px;
+		margin: 20px;
+	}
+	.h3-1 {
+		margin-left: 20px;
+	}
+	.h3-2 {
+		margin-left: 20px;
+	}
+	.h3-3 {
+		margin-left: 20px;
+	}
+	.sub-title {
+		margin-bottom: -50px;
+		border-bottom: 2px solid gray;
+	}
+	.section {
+		text-align: center;
+		padding: 10px;
+	}
+	.history-container p {
+		padding: 10px;
+		font-size: 15px;
+		color: white;
+	}
+	button {
+		margin: 100px auto;
+	}
 }

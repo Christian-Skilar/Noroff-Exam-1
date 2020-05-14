@@ -7,7 +7,7 @@
 	text-align: center;
 }
 .section1 h1 {
-	color: white;
+	color: #11a0d9;
 	font-family: bilo, sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -59,7 +59,7 @@
 	display: none;
 }
 button {
-	margin: 40px auto;
+	margin: 50px auto;
 	background-color: #11a0d9;
 	border: none;
 	outline: none;

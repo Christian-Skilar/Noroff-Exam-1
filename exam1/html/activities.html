@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../css/activities.css">
 </head>
 <body>
+
+  <div class="loader">
+    <img src="../img/Eclipse-loader.gif" alt="Loading...">
+  </div>
+
     <header>
         <div class="header-container">
             <img id="top" class="headerimg" src="../img/headerimg2.jpg" alt="header image">
@@ -48,11 +53,13 @@
         <h2>Launch Date Local Time</h2>
       </div>
       </span><span id="more">
+    <div class="launch-container1">
       <div class="launch-container">
         <p class="mission-name"></p>
         <p class="rocket-name"></p>
         <p class="launch-date"></p>
       </div>
+    </div>
         </span>
         <button type="button" id="read" onclick="read()">Read More</button>
       </div>
@@ -111,6 +118,7 @@
           </ul>
         </section>
       </footer>
+      <script src="../js/main.js"></script>
       <script src="../js/activities.js"></script>
 </body>
 </html>
