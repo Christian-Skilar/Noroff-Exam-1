@@ -19,42 +19,6 @@ async function roadster() {
 }
 roadster();
 
-/*-------------------PEOPLE IN SPACE API-----------------------*/
-
-const peopleInSpace = "http://api.open-notify.org/astros.json";
-
-async function spaceCount() {
-	const number = document.querySelector(".number");
-	try {
-		const response = await fetch(peopleInSpace);
-		const results = await response.json();
-
-		spaceCountLoop(results);
-
-		number.innerHTML = results.number;
-
-		console.log(results);
-	} catch (error) {
-		console.log(error);
-	} finally {
-		console.log("everything is done");
-	}
-}
-spaceCount();
-
-function spaceCountLoop(results) {
-	const craft = document.querySelector(".craft");
-	const people = document.querySelector(".people");
-	let info = results.people;
-
-	for (let i = 0; i < info.length; i++) {
-		craft.innerHTML += `<p>${info[i].craft}</p>`;
-		people.innerHTML += `<p>${info[i].name}</p>`;
-
-		console.log(info[i]);
-	}
-}
-
 /*-------------------SpaceX HISTORY-----------------------*/
 
 const history = "https://api.spacexdata.com/v3/history";

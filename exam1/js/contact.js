@@ -4,6 +4,16 @@ form.addEventListener("submit", validateForm);
 function validateForm(event) {
 	event.preventDefault();
 
+	const name = document.querySelector("#name");
+	const nameError = document.querySelector("#nameError");
+	const nameValue = name.value;
+
+	if (checkInputLength(nameValue) === true) {
+		nameError.style.display = "none";
+	} else {
+		nameError.style.display = "block";
+	}
+
 	const email = document.querySelector("#email");
 	const emailError = document.querySelector("#emailError");
 	const emailValue = email.value;
@@ -14,14 +24,14 @@ function validateForm(event) {
 		emailError.style.display = "block";
 	}
 
-	const name = document.querySelector("#name");
-	const nameError = document.querySelector("#nameError");
-	const nameValue = name.value;
+	const message = document.querySelector("#message");
+	const messageError = document.querySelector("#messageError");
+	const messageValue = message.value;
 
-	if (checkInputLength(nameValue) === true) {
-		nameError.style.display = "none";
+	if (checkMessageLength(messageValue) === true) {
+		messageError.style.display = "none";
 	} else {
-		nameError.style.display = "block";
+		messageError.style.display = "block";
 	}
 }
 
@@ -29,6 +39,16 @@ function checkInputLength(value) {
 	const trimmedValue = value.trim();
 
 	if (trimmedValue.length > 2) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function checkMessageLength(lengthValue) {
+	const trimmedLengthValue = lengthValue.trim();
+
+	if (trimmedLengthValue.length > 9) {
 		return true;
 	} else {
 		return false;

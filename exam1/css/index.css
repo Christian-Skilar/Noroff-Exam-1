@@ -3,7 +3,7 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
 	width: 80%;
-	margin: 200px auto;
+	margin: 100px auto;
 	padding: 50px;
 	font-family: bilo, sans-serif;
 	font-weight: 300;
@@ -35,10 +35,13 @@
 	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	color: white;
 	font-family: bilo, sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	margin: 200px auto;
+	padding: 50px 0;
 }
 .fun-fact-container h2 {
 	color: #11a0d9;
@@ -69,21 +72,24 @@
 .section1 {
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	margin: 200px 0;
 }
 .launch-content {
 	text-align: center;
 	font-size: 30px;
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
 	font-style: normal;
+	font-size: 30px;
 	margin-top: 100px;
 	margin-bottom: 50px;
 	padding: 20px;
 	color: white;
 	letter-spacing: 1px;
 	width: 400px;
-	background-color: rgba(000, 000, 000, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
 	border-radius: 10px;
 }
 .next-launches {
@@ -151,8 +157,8 @@
 
 .history {
 	text-align: center;
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
+	font-family: bilo, sans-serif;
+	font-weight: 700;
 	font-style: normal;
 	margin-bottom: 50px;
 	margin-top: 30px;
@@ -205,6 +211,12 @@
 }
 .astronaut-img {
 	width: 200px;
+	border-radius: 50%;
+	transition: 500ms;
+}
+.astronaut-img:hover {
+	box-shadow: 0 0 50px 0 white;
+	transform: scale(1.1);
 }
 
 .spaceCount:hover .show-more {
@@ -285,8 +297,8 @@
 	top: -100px;
 	left: 35%;
 	margin: 0;
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
+	font-family: bilo, sans-serif;
+	font-weight: 700;
 	font-style: normal;
 	font-size: 45px;
 	letter-spacing: 1px;
@@ -297,7 +309,7 @@
 	font-family: bilo, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 20px;
 	top: -100px;
 	left: 35%;
 	text-align: center;
@@ -311,7 +323,7 @@
 	color: white;
 	text-align: center;
 	font-family: bilo, sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-style: normal;
 	font-size: 30px;
 }
@@ -327,12 +339,12 @@
 }
 .location-indicator {
 	margin: 10px 10px 0 0;
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
+	font-family: bilo, sans-serif;
+	font-weight: 700;
 	font-style: normal;
 }
 .statelite-img {
-	width: 150px;
+	width: 200px;
 	margin: 100px 0 0 0;
 	align-self: center;
 	cursor: pointer;
@@ -341,6 +353,7 @@
 }
 .statelite-img:hover {
 	box-shadow: 0 0 50px 0 white;
+	transform: scale(1.1);
 }
 .statelite-img-link {
 	text-align: center;

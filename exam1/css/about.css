@@ -1,9 +1,30 @@
+.about-intro-container {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
+	margin: 200px auto;
+	width: 100%;
+	text-align: center;
+	font-family: bilo, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	color: white;
+}
+.about-intro-container h1 {
+	color: #11a0d9;
+	font-weight: 700;
+	font-size: 40px;
+}
+.about-intro-container p {
+	padding: 20px 100px;
+}
+
 /*------------------- TESLA ROADSTER -----------------------*/
 
 .section1 {
 	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
-	margin: 200px auto;
+	margin: 100px auto;
 	width: 100%;
 	text-align: center;
 	font-family: bilo, sans-serif;
@@ -26,8 +47,8 @@
 	font-size: 25px;
 }
 .tesla-name {
-	font-family: futura-pt, sans-serif;
-	font-weight: 600;
+	font-family: bilo, sans-serif;
+	font-weight: 700;
 	font-style: normal;
 	font-size: 40px;
 	color: #11a0d9;
@@ -41,80 +62,22 @@
 	padding: 50px;
 }
 
-/*------------------- PEOPLE IN SPACE -----------------------*/
-
-.section2 {
-	background-color: rgba(0, 0, 0, 0.6);
-	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
-	margin: 100px auto;
-	padding: 150px 0;
-	width: 100%;
-	text-align: center;
-	color: white;
-}
-.h2-img-container {
-	display: flex;
-	justify-content: space-evenly;
-}
-.h2-img-container h2 {
-	font-size: 40px;
-	color: #11a0d9;
-}
-.astronaut-image1 {
-	width: 150px;
-	transform: scaleX(-1);
-}
-.astronaut-image2 {
-	width: 150px;
-}
-.people-count {
-	display: flex;
-	justify-content: center;
-	margin: 100px 0;
-}
-.people-count p {
-	margin: 2px;
-	font-family: bilo, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 25px;
-}
-.number {
-	text-decoration: underline;
-}
-.people-in-space-info {
-	display: flex;
-	justify-content: space-evenly;
-	margin: 20px 0;
-}
-.people-in-space-info {
-	border-bottom: 1px solid white;
-	width: 50%;
-	margin: 30px auto;
-}
-.craft-name-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 30%;
-	font-size: 20px;
-}
-
 /*------------------- SPACE HISTORY -----------------------*/
 
 .container {
 	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 70px 40px rgba(0, 0, 0, 0.7);
-	margin: 500px 0;
+	margin: 100px 0;
 }
 .heading-history {
 	margin: 0 auto;
 	padding-top: 100px;
 	width: 100%;
 	font-family: bilo, sans-serif;
-	font-weight: 300;
+	font-weight: 700;
 	font-style: normal;
 	color: #11a0d9;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 }
 .heading-history p {
@@ -185,7 +148,7 @@ button:active {
 	margin-bottom: 300px;
 }
 
-/*------------------------------------------*/
+/*------------------- ISS -----------------------*/
 
 .iss-container {
 	background-color: rgba(0, 0, 0, 0.6);
@@ -210,14 +173,24 @@ button:active {
 	font-size: 20px;
 	padding: 20px 50px;
 }
+.iss-container img {
+	width: 50%;
+	border-radius: 10px;
+	margin: 50px 25%;
+}
 #readMore {
 	display: none;
 }
 .iss-btn {
 	margin: 0 auto;
+	margin-bottom: 200px;
 }
 
-/*--------------- TABLET ---------------*/
+footer {
+	margin-bottom: -500px;
+}
+
+/*------------------------- TABLET ----------------------------*/
 
 @media only screen and (max-width: 1024px) {
 	.h3-1 {
@@ -234,44 +207,41 @@ button:active {
 /*------------ PHONE ------------*/
 
 @media only screen and (max-width: 415px) {
-	.h2-img-container h2 {
+	/*------------------- TESLA ROADSTER -----------------------*/
+
+	.tesla-name {
 		font-size: 30px;
-		color: #11a0d9;
 	}
-	.astronaut-image1 {
-		width: 100px;
-		height: 100px;
-		transform: scaleX(-1);
-	}
-	.astronaut-image2 {
-		width: 100px;
-		height: 100px;
-	}
-	.people-in-space-info {
+	.tesla-img {
 		width: 80%;
 	}
-	.craft-name-container {
-		margin: 0 16%;
+	.tesla-description {
+		line-height: 30px;
+		font-size: 20px;
+		margin: 10px;
 	}
 
-	/*------------------------------------------*/
+	/*------------------ HISTORY ------------------------*/
 
 	.heading-history h2 {
-		font-size: 40px;
+		font-size: 30px;
 	}
 	.heading-history p {
 		color: white;
-		font-size: 25px;
+		font-size: 20px;
 		margin: 20px;
 	}
 	.h3-1 {
-		margin-left: 20px;
+		margin-left: 30px;
+		font-size: 22px;
 	}
 	.h3-2 {
-		margin-left: 20px;
+		margin-left: 30px;
+		font-size: 22px;
 	}
 	.h3-3 {
-		margin-left: 20px;
+		margin-left: 30px;
+		font-size: 22px;
 	}
 	.sub-title {
 		margin-bottom: -50px;
@@ -289,4 +259,16 @@ button:active {
 	button {
 		margin: 100px auto;
 	}
+
+	/*------------------- ISS -----------------------*/
+
+	.iss-container h2 {
+		font-size: 30px;
+	}
+	.iss-container img {
+		width: 80%;
+		margin: 50px 10%;
+	}
+
+	/*------------------- ISS -----------------------*/
 }

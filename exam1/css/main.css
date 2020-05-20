@@ -153,6 +153,7 @@ footer {
 	margin-bottom: -130px;
 	padding-top: 100px;
 	box-shadow: 0 -25px 45px 30px rgba(150, 150, 150, 0.5);
+	text-align: center;
 }
 .ft-main {
 	padding: 10px 20px;
@@ -258,21 +259,14 @@ form {
 }
 
 /*------------ FOOTER LEGAL ------------*/
-.footer-legal {
-	padding: 10px;
+.footer-copyright {
+	padding: 20px;
 	background-color: #000;
 	box-shadow: 0 -15px 15px #000;
 	font-size: 15px;
+	text-align: center;
 }
-.footer-legal-list {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.footer-legal-list li {
-	margin: 10px;
-}
+
 input:focus {
 	outline: none;
 }

@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="This is a microsite for SpaceX, about upcoming events and imortent milestones">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX Microsite</title>
+    <meta name="keywords" content="space, spacex, ">
+    <meta name="author" content="Christian Larsen, Noroff student 2020">
+    <title>SpaceX Contact</title>
     <link rel="stylesheet" href="https://use.typekit.net/nvi4vpq.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
@@ -44,7 +47,16 @@
           </div>
       </nav>
     </header>
+
+    <div class="contactform-info">
+      <h1>Contact Form</h1>
+      <p>If you have any questions about the space program, that you cant find on this page, 
+        feel free to send us a message using the contact form below. and we will come back to 
+        you within 2 buisniess days.</p>
+    </div>
+
     <form class="contactform" id="contactForm">
+      <h2>Get in Touch<img src="../img/chat.png" alt="contact img"></h2>
       <div>
         <input class="contact fullname" id="name" type="text" name="fullname" placeholder="Your name..">
         <div class="error name" id="nameError">Name must be over 2 caracters</div>
@@ -54,7 +66,8 @@
         <div class="error email" id="emailError">Please enter a valid email address</div>
     </div>
       <div>
-        <textarea class="message-box" name="message" placeholder="Write us a message.."></textarea>
+        <textarea class="message-box" name="message" id="message" placeholder="Write us a message.."></textarea>
+        <div class="error message" id="messageError">Message must be more then 10 characters</div>
       </div>
       <div class="submit-div">
         <button class="form-submit" type="submit" name="submit">Submit</button>
@@ -109,8 +122,6 @@
      
         <section class="footer-legal">
           <ul class="footer-legal-list">
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
             <li>&copy; 2020 Christian Larsen Noroff Student.</li>
           </ul>
         </section>
