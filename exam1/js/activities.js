@@ -24,9 +24,15 @@ getLaunchInfo();
 function launchResults(result) {
 	for (var i = 0; i < result.length; i++) {
 		document.querySelector(".launch-container1").innerHTML += `<div class="launch-container">
-            <p class="title">${result[i].mission_name}</p>
-            <p class="event-date">${result[i].launch_site.site_name_long}</p>
-            <p class="details">${result[i].launch_date_local}</p>
+            <p class="title"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Mission Name:</span><br>${result[
+				i
+			].mission_name}</p>
+            <p class="event-date"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Launch Site:</span><br>${result[
+				i
+			].launch_site.site_name_long}</p>
+            <p class="details"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Launch Date Local Time:</span><br>${result[
+				i
+			].launch_date_local}</p>
           </div>`;
 	}
 }

@@ -227,7 +227,6 @@ form {
 	color: black;
 	cursor: pointer;
 	border: 0;
-	text-transform: uppercase;
 	padding: 15px 15px;
 	margin-top: 10px;
 	font-size: 15px;
@@ -236,8 +235,6 @@ form {
 }
 .input-submit-home:active {
 	background-color: #2eff8c;
-	font-size: 14px;
-	padding: 0 17px;
 }
 .email-error {
 	color: #ff1a1a;

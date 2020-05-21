@@ -23,7 +23,9 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-.spacex-img {
+.spacex-img1,
+.spacex-img2,
+.spacex-img3 {
 	width: 350px;
 	margin: 50px 0;
 }
@@ -371,17 +373,43 @@
 /* --------------- TABLET SCREEN SIZE --------------*/
 
 @media only screen and (max-width: 1024px) {
-	.tesla-content .tesla-text {
-		position: relative;
-		z-index: 3;
-		color: white;
-		opacity: 1;
-		transform: translateY(0);
-		transition: 0ms;
+	.spacex-intro {
+		width: 100%;
+		margin: 100px auto;
+		padding: 0;
+	}
+	.spacex-intro p {
+		margin: 10px;
+	}
+	.spacex-img3 {
+		display: none;
+	}
+	/* -------------- TESLA --------------*/
+
+	.tesla-content {
+		width: 90%;
 	}
 	.tesla-content::before {
-		transition: 0;
+		transition: 0ms;
+	}
+	.tesla-content .tesla-text {
 		opacity: 1;
+		transform: translateY(0px);
+		transition: 0ms;
+	}
+	.tesla-text h2 {
+		top: -200px;
+		left: 20%;
+		font-size: 40px;
+	}
+	.tesla-text p {
+		font-size: 25px;
+		top: -200px;
+		left: 20%;
+	}
+	.tesla-text p a {
+		font-size: 25px;
+		font-weight: 700;
 	}
 	.show-more {
 		opacity: 1;
@@ -398,6 +426,23 @@
 }
 
 @media only screen and (max-width: 415px) {
+	.spacex-intro {
+		width: 80%;
+		padding: 10px;
+		font-family: bilo, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		color: white;
+		text-align: center;
+	}
+	.spacex-img1 {
+		width: 300px;
+	}
+	.spacex-img2,
+	.spacex-img3 {
+		display: none;
+	}
+
 	.section1 {
 		display: flex;
 		flex-direction: column;
@@ -409,7 +454,44 @@
 		width: 300px;
 		margin-left: -72px;
 	}
-	/* ------ALIEN IMG-------*/
+	/* ------------------- FUN FACTS ---------------*/
+
+	.fun-fact-container h2 {
+		text-align: center;
+		margin-top: 100px;
+	}
+	.fun-fact-container h3 {
+		font-size: 25px;
+		margin: 10px;
+		text-align: center;
+	}
+	.fun-fact-container p {
+		font-size: 20px;
+		margin: 10px;
+		text-align: center;
+	}
+	.handshake {
+		width: 70px;
+		margin-left: 40%;
+	}
+	.geek {
+		width: 100px;
+		margin-left: 35%;
+	}
+	.fact1 {
+		width: 100%;
+	}
+	.fact2 {
+		width: 100%;
+	}
+
+	/* --------------- HISTORY --------------*/
+
+	.history {
+		width: 100%;
+	}
+
+	/* ----------- ALIEN IMG -----------*/
 	.history-img {
 		margin-top: 100px;
 		width: 150px;
@@ -418,7 +500,7 @@
 	.history-img:hover {
 		transform: rotate(0deg);
 	}
-	/* --------PEOPLE IN SPACE--------*/
+	/* -------- PEOPLE IN SPACE ----------*/
 	.spaceCount {
 		margin-top: 100px;
 		font-size: 25px;
@@ -429,41 +511,33 @@
 	.astronaut-img {
 		width: 150px;
 	}
-	/* ---------TESLA----------*/
+	/* -------------- TESLA --------------*/
 	.tesla-container {
-		margin: 200px auto;
+		margin: 150px auto;
 	}
 	.tesla-content {
 		width: 300px;
 		height: 200px;
-		transition: 0ms;
-		margin: 0;
-	}
-	.tesla-content::before {
-		transition: 0ms;
-	}
-	.tesla-content .tesla-text {
-		opacity: 1;
-		transform: translateY(0px);
-		transition: 0ms;
 	}
 	.tesla-text h2 {
-		top: -50px;
+		top: -100px;
 		left: 5%;
 		font-size: 20px;
 	}
 	.tesla-text p {
 		font-size: 15px;
-		top: -50px;
+		top: -100px;
 		left: 5%;
 	}
 	.tesla-text p a {
-		color: #11a0d9;
 		font-size: 16px;
-		font-weight: 700;
 	}
-	/* --------- ISS --------*/
+	/* ------------------- ISS ---------------*/
 	.iss-text {
 		font-size: 25px;
+		margin: 20px;
+	}
+	.statelite-img {
+		width: 150px;
 	}
 }

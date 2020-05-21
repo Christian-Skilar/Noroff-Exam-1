@@ -6,6 +6,10 @@ async function roadster() {
 	const name = document.querySelector(".tesla-name");
 	const teslaImg = document.querySelector(".tesla-img");
 	const teslaDescription = document.querySelector(".tesla-description");
+	const distanceEarth = document.querySelector(".distance-earth");
+	const distanceMars = document.querySelector(".distance-mars");
+	const speed = document.querySelector(".speed");
+	const daysInSpace = document.querySelector(".days-in-space");
 	try {
 		const response = await fetch(teslaRoadster);
 		const result = await response.json();
@@ -13,6 +17,10 @@ async function roadster() {
 		name.innerHTML = result.name;
 		teslaImg.src = result.flickr_images[0];
 		teslaDescription.innerHTML = result.details;
+		distanceEarth.innerHTML = result.earth_distance_mi;
+		distanceMars.innerHTML = result.mars_distance_mi;
+		speed.innerHTML = result.speed_mph;
+		daysInSpace.innerHTML = result.period_days;
 
 		console.log(result);
 	} catch (error) {}
@@ -42,9 +50,15 @@ spaceHistory();
 function spaceHistoryLoop(historyResults) {
 	for (var i = 0; i < historyResults.length; i++) {
 		document.querySelector(".section3").innerHTML += `<div class="history-container">
-            <p class="title">${historyResults[i].title}</p>
-            <p class="event-date">${historyResults[i].event_date_utc}</p>
-            <p class="details">${historyResults[i].details}</p>
+            <p class="title"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Title:</span><br> ${historyResults[
+				i
+			].title}</p>
+            <p class="event-date"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Date:</span><br> ${historyResults[
+				i
+			].event_date_utc}</p>
+            <p class="details"><span style="color: #11a0d9; font-weight: 700; font-size: 25px;">Details:</span><br> ${historyResults[
+				i
+			].details}</p>
           </div>`;
 	}
 }
