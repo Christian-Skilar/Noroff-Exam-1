@@ -8,7 +8,7 @@ body {
 }
 
 body {
-	background-image: url(../img/bodyimg2.jpg);
+	background-image: url(../img/cosmos.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -72,7 +72,7 @@ h1 {
 }
 .headerimg {
 	width: 100%;
-	transform: scalex(-1);
+	height: 450px;
 }
 /*--------- NAVIGATION ---------*/
 
@@ -281,7 +281,7 @@ input:focus {
 		top: 10px;
 	}
 	.headerimg {
-		height: 150px;
+		height: 250px;
 	}
 	.navbar-container {
 		padding: 20px;
@@ -401,7 +401,7 @@ input:focus {
 		font-size: 20px;
 	}
 	.headerimg {
-		height: 100px;
+		height: 200px;
 	}
 	.header ul a {
 		font-size: 25px;
