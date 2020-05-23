@@ -61,12 +61,14 @@ header div a {
 	color: white;
 	font-size: 30px;
 }
+.spacex-logo-x {
+	color: #11a0d9;
+	font-weight: 700;
+}
 h1 {
 	font-family: bilo, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-}
-header {
 }
 .headerimg {
 	width: 100%;
@@ -112,6 +114,10 @@ header .menu-btn {
 .navbar-container ul li.active-link .underline {
 	width: 100%;
 	background-color: white;
+}
+.navbar-container ul li.active-link a {
+	color: #11a0d9;
+	font-weight: 600;
 }
 
 .navbar-container ul li:hover .underline {

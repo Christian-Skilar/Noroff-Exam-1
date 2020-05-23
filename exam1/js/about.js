@@ -10,6 +10,8 @@ async function roadster() {
 	const distanceMars = document.querySelector(".distance-mars");
 	const speed = document.querySelector(".speed");
 	const daysInSpace = document.querySelector(".days-in-space");
+	// const video = document.querySelector("iframe");
+
 	try {
 		const response = await fetch(teslaRoadster);
 		const result = await response.json();
@@ -21,6 +23,7 @@ async function roadster() {
 		distanceMars.innerHTML = result.mars_distance_mi;
 		speed.innerHTML = result.speed_mph;
 		daysInSpace.innerHTML = result.period_days;
+		// video.src = result.video;
 
 		console.log(result);
 	} catch (error) {}
@@ -99,4 +102,29 @@ function read() {
 
 		i = 0;
 	}
+}
+
+/*-------------------FOOTER NEWSLETTER FORM VALIDATION-----------------------*/
+
+const form = document.querySelector("#contactForm");
+form.addEventListener("submit", validateForm);
+
+function validateForm(event) {
+	event.preventDefault();
+
+	const email = document.querySelector("#email");
+	const emailError = document.querySelector(".email-error");
+	const emailValue = email.value;
+
+	if (validateEmail(emailValue)) {
+		emailError.style.display = "none";
+	} else {
+		emailError.style.display = "block";
+	}
+}
+
+function validateEmail(email) {
+	const regEx = /\S+@\S+\.\S+/;
+	const patternMatches = regEx.test(email);
+	return patternMatches;
 }

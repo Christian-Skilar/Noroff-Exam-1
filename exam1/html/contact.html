@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This is a microsite for SpaceX, about upcoming events and imortent milestones">
+    <meta name="description" content="Elon Musk SpaceX microsite, upcoming events, historic missions, space travel, people in space, the ISS international space station and imortent milestones">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="contact form, space program questions">
     <meta name="author" content="Christian Larsen, Noroff student 2020">
@@ -20,7 +20,7 @@
     <header>
         <div class="header-container">
             <img id="top" class="headerimg" src="../img/headerimg2.jpg" alt="header image">
-            <div class="site-logo"><a href="index.html"><h1>Space<span style="color: #11A0D9; font-weight: 700;">X</span></h1></a></div>
+            <div class="site-logo"><a href="index.html"><h1>Space<span class="spacex-logo-x">X</span></h1></a></div>
         </div>
         <nav class="header">
           <div class="navbar-container">
@@ -32,7 +32,7 @@
                       <div class="underline"></div>
                   </li>
                   <li class="nav-link active-link">
-                      <a href="contact.html"><span style="color: #11A0D9; font-weight: 600;">Contact</span></a>
+                      <a href="contact.html">Contact</a>
                       <div class="underline"></div>
                   </li>
                   <li class="nav-link">
@@ -104,11 +104,13 @@
             <h2 class="footer-title">Stay Updated</h2>
             <p class="newsletter">Subscribe to our newsletter</p> 
 
-            <form class="ft-form">
-                <input class="input-mail-home" type="email" name="email" placeholder="Enter Email">
-                <input class="input-submit-home" type="submit" value="Subscribe">
-            </form>
-            <div class="email-error">Email not valide</div>
+            <div id="contactForm">
+              <form class="ft-form" id="contactForm">
+                <input class="input-mail-home" id="email" name="email" placeholder="Enter Email">
+                <input class="input-submit-home" type="submit" name="submit" value="Subscribe">
+              </form>
+              <div class="email-error" id="emailError">Email not valide</div>
+              </div>
             
             <div class="ft-sosial-media-container">
                 <a href="https://www.facebook.com/" target="_blank"><img class="sosial-media-img" src="../img/facebook1.png" alt="Facebook logo"></a>
@@ -126,7 +128,7 @@
           </ul>
         </section>
       </footer>
-      <script src="../js/main.js"></script>
       <script src="../js/contact.js"></script>
+      <script src="../js/main.js"></script>
 </body>
 </html>

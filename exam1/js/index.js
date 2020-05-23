@@ -1,13 +1,14 @@
 /*-------------------INTERNATIONAL SPACE STATION API-----------------------*/
 
 const url = "http://api.open-notify.org/iss-now.json";
+const corsEnableurl = "https://noroffcors.herokuapp.com/" + url;
 
 async function getInfo() {
 	const h3 = document.querySelector("#h3");
 	const h31 = document.querySelector("#h31");
 
 	try {
-		const response = await fetch(url);
+		const response = await fetch(corsEnableurl);
 		const results = await response.json();
 
 		h3.innerHTML = results.iss_position.latitude;
@@ -26,12 +27,13 @@ let liveFeed = setInterval(getInfo, 2000);
 /*-------------------PEOPLE IN SPACE API-----------------------*/
 
 const peopleInSpace = "http://api.open-notify.org/astros.json";
+const corsPeopleInSpace = "https://noroffcors.herokuapp.com/" + peopleInSpace;
 
 async function spaceCount() {
 	const p = document.querySelector(".show-more");
 
 	try {
-		const response = await fetch(peopleInSpace);
+		const response = await fetch(corsPeopleInSpace);
 		const results = await response.json();
 
 		p.innerHTML = results.number;
@@ -44,31 +46,6 @@ async function spaceCount() {
 	}
 }
 spaceCount();
-
-/*-------------------FOOTER NEWSLETTER FORM VALIDATION-----------------------*/
-
-const form = document.querySelector("#contactForm");
-form.addEventListener("submit", validateForm);
-
-function validateForm(event) {
-	event.preventDefault();
-
-	const email = document.querySelector("#email");
-	const emailError = document.querySelector(".email-error");
-	const emailValue = email.value;
-
-	if (validateEmail(emailValue)) {
-		emailError.style.display = "none";
-	} else {
-		emailError.style.display = "block";
-	}
-}
-
-function validateEmail(email) {
-	const regEx = /\S+@\S+\.\S+/;
-	const patternMatches = regEx.test(email);
-	return patternMatches;
-}
 
 /*-------------------LAUNCHES API-----------------------*/
 
@@ -115,3 +92,28 @@ async function roadster() {
 	} catch (error) {}
 }
 roadster();
+
+/*-------------------FOOTER NEWSLETTER FORM VALIDATION-----------------------*/
+
+const form = document.querySelector("#contactForm");
+form.addEventListener("submit", validateForm);
+
+function validateForm(event) {
+	event.preventDefault();
+
+	const email = document.querySelector("#email");
+	const emailError = document.querySelector(".email-error");
+	const emailValue = email.value;
+
+	if (validateEmail(emailValue)) {
+		emailError.style.display = "none";
+	} else {
+		emailError.style.display = "block";
+	}
+}
+
+function validateEmail(email) {
+	const regEx = /\S+@\S+\.\S+/;
+	const patternMatches = regEx.test(email);
+	return patternMatches;
+}

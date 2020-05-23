@@ -40,11 +40,12 @@ function launchResults(result) {
 /*-------------------PEOPLE IN SPACE API-----------------------*/
 
 const peopleInSpace = "http://api.open-notify.org/astros.json";
+const corsPeopleInSpace = "https://noroffcors.herokuapp.com/" + peopleInSpace;
 
 async function spaceCount() {
 	const number = document.querySelector(".number");
 	try {
-		const response = await fetch(peopleInSpace);
+		const response = await fetch(corsPeopleInSpace);
 		const results = await response.json();
 
 		spaceCountLoop(results);
@@ -87,4 +88,29 @@ function read() {
 		document.getElementById("read").innerHTML = "Show All";
 		i = 0;
 	}
+}
+
+/*-------------------FOOTER NEWSLETTER FORM VALIDATION-----------------------*/
+
+const form = document.querySelector("#contactForm");
+form.addEventListener("submit", validateForm);
+
+function validateForm(event) {
+	event.preventDefault();
+
+	const email = document.querySelector("#email");
+	const emailError = document.querySelector(".email-error");
+	const emailValue = email.value;
+
+	if (validateEmail(emailValue)) {
+		emailError.style.display = "none";
+	} else {
+		emailError.style.display = "block";
+	}
+}
+
+function validateEmail(email) {
+	const regEx = /\S+@\S+\.\S+/;
+	const patternMatches = regEx.test(email);
+	return patternMatches;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="This is a microsite for SpaceX, about upcoming events and imortent milestones">
+  <meta name="description" content="Elon Musk SpaceX microsite, upcoming events, historic missions, space travel, people in space, the ISS international space station and imortent milestones">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="spacex private company, low earth orbit, dragon spacecraft, iss, 
   falcon heavy, elon musk, tesla roadster, mission history, space station, international space station">
@@ -21,7 +21,7 @@
     <header>
         <div class="header-container">
             <img id="top" class="headerimg" src="../img/headerimg2.jpg" alt="header image">
-            <div class="site-logo"><a href="index.html"><h1>Space<span style="color: #11A0D9; font-weight: 700;">X</span></h1></a></div>
+            <div class="site-logo"><a href="index.html"><h1>Space<span class="spacex-logo-x">X</span></h1></a></div>
         </div>
         <nav class="header">
           <div class="navbar-container">
@@ -41,7 +41,7 @@
                       <div class="underline"></div>
                   </li>
                   <li class="nav-link active-link">
-                      <a href="about.html"><span style="color: #11A0D9; font-weight: 600;">About</span></a>
+                      <a href="about.html">About</a>
                       <div class="underline"></div>
                   </li>
               </ul>
@@ -69,27 +69,31 @@
       <p class="tesla-description"></p>
 
       <div class="roadster-info">
-        <p class="roadster-p">Tesla roadsters distance to Earth is:</p>
+        <p class="roadster-p">Distance to Earth:</p>
         <p class="distance-earth"></p>
         <p>Miles</p>
       </div>
 
       <div class="roadster-info">
-        <p class="roadster-p">Tesla roadsters distance to Mars is:</p>
+        <p class="roadster-p">Distance to Mars:</p>
         <p class="distance-mars"></p>
         <p>Miles</p>
       </div>
 
       <div class="roadster-info">
-        <p class="roadster-p">Tesla roadsters speed is:</p>
+        <p class="roadster-p">Tesla roadsters speed:</p>
         <p class="speed"></p>
         <p>Mph</p>
       </div>
 
       <div class="roadster-info">
-        <p class="roadster-p">Tesla roadsters has been ins space for:</p>
+        <p class="roadster-p">Has been ins space for:</p>
         <p class="days-in-space"></p>
         <p>Days</p>
+      </div>
+      
+      <div>
+        <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/wbSwFU6tY1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <a href="https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster" target="_blank">Link to even more information</a>
@@ -207,11 +211,13 @@
             <h2 class="footer-title">Stay Updated</h2>
             <p class="newsletter">Subscribe to our newsletter</p> 
 
-            <form class="ft-form">
-              <input class="input-mail-home" type="email" name="email" placeholder="Enter Email">
-              <input class="input-submit-home" type="submit" value="Subscribe">
-            </form>
-            <div class="email-error">Email not valide</div>
+            <div id="contactForm">
+              <form class="ft-form" id="contactForm">
+                <input class="input-mail-home" id="email" name="email" placeholder="Enter Email">
+                <input class="input-submit-home" type="submit" name="submit" value="Subscribe">
+              </form>
+              <div class="email-error" id="emailError">Email not valide</div>
+              </div>
             
             <div class="ft-sosial-media-container">
                 <a href="https://www.facebook.com/" target="_blank"><img class="sosial-media-img" src="../img/facebook1.png" alt="Facebook logo"></a>

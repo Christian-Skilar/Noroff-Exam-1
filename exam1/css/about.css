@@ -77,6 +77,9 @@
 .roadster-info p {
 	margin-left: 10px;
 }
+.video {
+	margin: 50px auto;
+}
 
 /*------------------- SPACE HISTORY -----------------------*/
 
@@ -229,6 +232,10 @@ footer {
 	}
 	/*------------------- TESLA ROADSTER -----------------------*/
 
+	.video {
+		width: 320px;
+		height: 180px;
+	}
 	.tesla-name {
 		font-size: 30px;
 	}
